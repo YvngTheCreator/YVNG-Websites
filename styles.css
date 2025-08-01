@@ -7,6 +7,37 @@ body {
   color: #333;
   background-color: #fff;
 }
+#amenities {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+#amenities h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#amenities p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.amenities-list {
+  list-style:circle;
+  padding: 0;
+  max-width: 800px;
+}
+
+.amenities-list li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  padding-left: 1em;
+  text-indent: -1em;
+  color: chocolate;
+}
+
   
 
 h1, h2, h3 {
@@ -33,7 +64,7 @@ input, select, textarea, button {
 }
 
 button {
-  background-color: #27ae60;
+  background-color: chocolate;
   color: white;
   border: none;
   font-weight: bold;
@@ -52,11 +83,31 @@ footer {
       padding: 1rem;
       margin-top: 2rem;
     }
+.gallery-slideshow {
+  position: relative;
+  height: 100vh;
+  background: url("pictures/pool.jpg") no-repeat center center;
+  background-size: cover;
+  transition: background-image 1.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color : #fff;
+  text-align: center;
+}
+
+.gallery-slideshow h2
+.gallery-slideshow p {
+  color: aliceblue;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
 /* Hero Section */
 .hero {
-  background: url("pictures/hero-bg.jpg") no-repeat center center;
-  background: url("pictures/hero-bg2.jpg") no-repeat center center;
-  background: url("pictures/lounge.jpg") no-repeat center center;
+  background: url("pictures/welcome.jpg") no-repeat center center;
+flex-direction: column;
   height: 100vh;
   position:relative;
   display:flex;
@@ -176,7 +227,63 @@ room {
   justify-content: center;
   gap: 1rem;
 }
+#rooms {
+  background-color: #f9f9f9;
+  padding: 3rem 2rem;
+  
+}
 
+.room-card {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.room-card h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.room-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+.room-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.room-images img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#location {
+  padding: 2rem;
+  text-align: center;
+}
+
+.map-container {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
 
 /* Navbar Styles */
 .navbar {

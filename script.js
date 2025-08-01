@@ -3,9 +3,9 @@
   // HERO Slideshow
   const hero = document.querySelector('.hero');
   const heroImages = [
-    'pictures/hero-bg.jpg',
-    'pictures/hero-bg2.jpg',
-    'pictures/hero-bg3.jpg'
+    'pictures/hero-bg3.jpg',
+    'pictures/hero-bg4.jpg',
+    'pictures/welcome.jpg',
   ];
   let heroIndex = 0;
   setInterval(() => {
@@ -104,3 +104,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
